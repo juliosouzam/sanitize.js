@@ -1,6 +1,6 @@
 {
   "name": "sanitize.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A basic lib to sanitize string values",
   "main": "dist/index.js",
   "scripts": {
