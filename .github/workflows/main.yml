@@ -14,10 +14,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
-      - run: yarn test
-        name: Build
-      - run: yarn build
+      - run: npm install
+      - run: npm run test
   publish:
     if: github.ref == 'refs/heads/main'
     needs: build
@@ -28,6 +26,10 @@ jobs:
         with:
           node-version: 14
           registry-url: 'https://registry.npmjs.org'
+      - name: Build
+        run: |
+          npm install
+          npm run build
       - name: Publish
         run: |
           npm publish --ignore-scripts

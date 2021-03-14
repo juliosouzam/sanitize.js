@@ -2,7 +2,7 @@
   "name": "sanitize.js",
   "version": "1.0.5",
   "description": "A basic lib to sanitize string values",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "yarn build:types && yarn build:js",
     "build:types": "tsc --emitDeclarationOnly",
