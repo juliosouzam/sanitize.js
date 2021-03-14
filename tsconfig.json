@@ -3,9 +3,6 @@
     "target": "esnext",
     "module": "commonjs",
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationMap": true,
-    "sourceMap": true,
     "outDir": "./dist",
     "isolatedModules": true,
     "resolveJsonModule": true,
@@ -15,8 +12,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
-    "dist",
+    "node_modules",
     "__tests__",
     "*/*.js"
   ]
